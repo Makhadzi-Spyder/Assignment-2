@@ -1,5 +1,6 @@
 package com.example.assignment2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -21,14 +22,19 @@ class FlashCards : AppCompatActivity() {
         val btnFalse = findViewById<Button>(R.id.btnFalse)
 
         //array to store list of life hacks //MENTION USE OF AI
-        data class LifeHack(val statement: String, val isTrue: Boolean)
+        data class LifeHack(val statement: String, val isTrue: Boolean, val review: String)
 
         val lifeHacks = arrayOf(
-            LifeHack("Putting your phone in rice fixes water damage", false),
-            LifeHack("Cold showers boost alertness", true),
-            LifeHack("Cracking knuckles causes arthritis", false),
-            LifeHack("Drinking coffee sobers you up", false),
-            LifeHack("You should wait 30 minutes after eating before swimming", false)
+            LifeHack(
+                "Putting your phone in rice fixes water damage",
+                false,
+                "Rice does not properly dry internal components."
+            ),
+            LifeHack(
+                "Cold showers boost alertness",
+                true,
+                "They increase circulation and alertness."
+            )
         )
 
         //Variable to store current flashcard
@@ -50,8 +56,11 @@ class FlashCards : AppCompatActivity() {
                 btnTrue.isEnabled = true
                 btnFalse.isEnabled = true
             } else {
-                txtFlash.text = "Your quiz is finsihed!"
-                txtFeedback.text = ""
+                val intent = Intent(this, Score::class.java)
+                intent.putExtra("SCORE", score)
+                intent.putExtra("TOTAL", lifeHacks.size)
+                startActivity(intent)
+                finish()
 
                 btnTrue.isEnabled = false
                 btnFalse.isEnabled = false
