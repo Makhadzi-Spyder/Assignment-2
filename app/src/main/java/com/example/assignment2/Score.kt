@@ -1,28 +1,16 @@
 package com.example.assignment2
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class Score : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
-        //Linking "Start" button to the Flash card screen
-        val btnStart = findViewById<Button>(R.id.btnStart)
-
-        btnStart.setOnClickListener {
-            //creating explicit intent
-            val intent = Intent(this,FlashCards::class.java)
-            //start the activity
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_score)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Assignment2</string>
+    <string name="this_app_was_designed_to_liet_users_like_you_be_sure_of_the_information_you_were_given_we_will_be_debunking_myths_that_are_spread_all_over_the_internet_are_you_ready">This app was designed to liet users like you be sure of the information you were given. We will be debunking myths that are spread all over the internet. Are you ready!</string>
+    <string name="start">Start</string>
+    <string name="welcome">Welcome!</string>
+    <string name="false">False</string>
+    <string name="next">Next</string>
+    <string name="true">True</string>
+    <string name="textview">TextView</string>
+    <string name="false">False</string>
 </resources>
