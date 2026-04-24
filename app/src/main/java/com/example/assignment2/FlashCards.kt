@@ -33,9 +33,56 @@ class FlashCards : AppCompatActivity() {
                 "Rice does not properly dry internal components."
             ),
             LifeHack(
+               "Sneezing with your eyes open can cause a blood vessel to pop",
+                true,
+                "A tiny blood vessel could pop and leave a red, painless spot on the whites on your eyes"
+            ),
+            LifeHack(
                 "Cold showers boost alertness",
                 true,
                 "They increase circulation and alertness."
+            ),
+            LifeHack(
+                "Drinking milk makes your bones stronger",
+                true,
+                "The calcium and protein in milk can help build bone density"
+
+            ),
+            LifeHack(
+                "Using a cold spoon can reduce eye puffiness",
+                true,
+                "Swelling and puffiness decreases due to cold temperatures"
+            ),
+            LifeHack(
+                "Chewing gum can improve focus temporarily",
+                true,
+                "Boosts alertness due to the increase in blood flow to the brain"
+            ),
+            LifeHack(
+                "Cracking your knuckles causes arthritis",
+                false,
+                "No science proves that arthritis is linked to knuckle cracking"
+            ),
+            LifeHack(
+                "Swallowing fruits seeds will cause a plant to grow in your stomach",
+                false,
+                "Stomach acid breaks the seed down"
+            ),
+            LifeHack(
+                "You only use 10% of your brain",
+                false,
+                "Science has proves that multiple parts of your brain are active at once"
+
+            ),
+            LifeHack(
+                "Eating carrots will give you much better vision",
+                false,
+                "They improve eye health but cannot give better vision"
+            ),
+            LifeHack(
+                "Rolling your eyes too much will leave them stuck like that",
+                false,
+                "Medically impossible"
             )
         )
 

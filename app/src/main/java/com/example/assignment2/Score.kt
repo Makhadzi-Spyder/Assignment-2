@@ -44,12 +44,30 @@ class Score : AppCompatActivity() {
 
         val statements = arrayOf(
             "Putting your phone in rice fixes water damage",
-            "Cold showers boost alertness"
+            "Sneezing with your eyes open can cause a blood vessel to pop",
+            "Cold showers boost alertness",
+            "Drinking milk makes your bones stronger",
+            "Using a cold spoon can reduce eye puffiness",
+            "Chewing gum can improve focus temporarily",
+            "Cracking your knuckles causes arthritis",
+            "Swallowing fruits seeds will cause a plant to grow in your stomach",
+            "You only use 10% of your brain",
+            "Eating carrots will give you much better vision",
+            "Rolling your eyes too much will leave them stuck like that"
         )
 
         val explanations = arrayOf(
             "False: Rice does not properly dry internal components and can cause more damage.",
-            "True: Cold showers increase circulation and make you feel more alert."
+            "True: A tiny blood vessel could pop and leave a red, painless spot on the whites on your eyes",
+            "True: Cold showers increase circulation and make you feel more alert.",
+            "True: The calcium and protein in milk can help build bone density",
+            "True: Swelling and puffiness decreases due to cold temperatures",
+            "True: Boosts alertness due to the increase in blood flow to the brain",
+            "False: No science proves that arthritis is linked to knuckle cracking",
+            "False: Stomach acid breaks the seed down",
+            "False: Science has proves that multiple parts of your brain are active at once",
+            "False: They improve eye health but cannot give better vision",
+            "False: Medically impossible "
         )
 
 

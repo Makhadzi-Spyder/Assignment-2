@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/whatsapp_image_2026_04_23_at_17_11_02"
-    tools:context=".MainActivity" >
+    android:background="@drawable/download__1_"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnStart"
@@ -30,6 +30,7 @@
         android:layout_marginBottom="37dp"
         android:text="@string/welcome"
         android:textColor="#040404"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
