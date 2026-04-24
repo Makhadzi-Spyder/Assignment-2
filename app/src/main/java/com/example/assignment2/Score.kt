@@ -2,6 +2,7 @@ package com.example.assignment2
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -24,6 +25,9 @@ class Score : AppCompatActivity() {
         val btnReview = findViewById<Button>(R.id.btnReview)
         val txtReview = findViewById<TextView>(R.id.txtReview)
 
+        //first thing to appear when screen loads
+        Log.d("ScoreScreen", "Received score: $score out of $total")
+
         txtScore.text = "Your score: $score / $total"
 
         val percentage = (score.toDouble() / total) * 100
@@ -33,14 +37,10 @@ class Score : AppCompatActivity() {
             percentage >= 50 -> "Not bad, keep improving "
             else -> "Keep practicing "
         }
+        Log.d("ScoreScreen", "Calculated percentage: $percentage")
 
         txtFeedback.text = feedback
 
-        data class LifeHack(
-            val statement: String,
-            val isTrue: Boolean,
-            val explanation: String
-        )
 
         val statements = arrayOf(
             "Putting your phone in rice fixes water damage",
@@ -55,15 +55,16 @@ class Score : AppCompatActivity() {
 
         //what the "Review" button does //MENTION THE USE OF AI
         btnReview.setOnClickListener {
+            Log.d("ScoreScreen", "Review button clicked")
 
-            var text = ""
+            var reviewText = ""
 
             for (i in statements.indices) {
-                text += "• ${statements[i]}\n"
-                text += "${explanations[i]}\n\n"
+                reviewText += "• ${statements[i]}\n"
+                reviewText += "${explanations[i]}\n\n"
             }
 
-            txtReview.text = text
+            txtReview.text = reviewText
             txtReview.visibility = View.VISIBLE
         }
 
