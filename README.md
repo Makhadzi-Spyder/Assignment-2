@@ -118,4 +118,4 @@ Regular commits were made to document progress throughout the application.
 ---
 
 ## 🌸 Author 🌸
-Developed by: Makhadzi Netshisaulu (ST10522146)
+### Developed by: Makhadzi Netshisaulu (ST10522146)
